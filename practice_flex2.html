@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style>
+        .flex{
+            display: flex;
+        }
+
+        .bgGray{
+            background: #f4f4f4;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #7fa5b5;
+        }
+    </style>
+
+</head>
+<body>
+  
+    <head>
+        <nav class="flex" style="background: #f5f5f5; border-radius: 12px; padding: 5px; border: 1px solid orange; align-items: center; align-content: space-around;">
+            <div id="logo">Logo</div>
+            <div id="menu" class="flex" style="border: 1px solid blue; align-items: flex-end; margin-left: auto;">
+                <ul class="flex" style="list-style: none; border: 1px solid red;">
+                    <li style="margin: 0 10px;"><a href="">home</a></li>
+                    <li style="margin: 0 10px;"><a href="">home</a></li>
+                    <li style="margin: 0 10px;"><a href="">home</a></li>
+                    <li style="margin: 0 10px;"><a href="">home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+   
+    <div id="container" class="flex" style=""> <!-- Incio Container -->
+
+        <div id="menuLateral" class="bgGray" style="flex: 1;">
+            <ul style="list-style: none;">
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 3</li>
+                <li>Opção 5</li>
+                <li>Opção 6</li>
+            </ul>
+        </div>
+    
+        <main class="bgGray" style="flex: 4; margin: 5px 20px;">
+            <div id="artigo1">
+                <h2>Titulo 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores qui quod deserunt officia nulla quos, magnam, voluptate ullam dolorem beatae.</p>
+            </div>
+            <div id="artigo2">
+                <h2>Titulo 2</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores qui quod deserunt officia nulla quos, magnam, voluptate ullam dolorem beatae.</p>
+            </div>
+            <div id="artigo3">
+                <h2>Titulo 3</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores qui quod deserunt officia nulla quos, magnam, voluptate ullam dolorem beatae.</p>
+            </div>
+            <div id="artigo4">
+                <h2>Titulo 4</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dolores qui quod deserunt officia nulla quos, magnam, voluptate ullam dolorem beatae.</p>
+            </div>
+            
+        </main>
+    
+        <div id="noticias" class="bgGray" style="flex: 1;">
+            <div>
+                <h3>noticia 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis </p> </p>
+            </div>
+            <div>
+                <h3>noticia 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis </p> </p>
+            </div>
+            <div>
+                <h3>noticia 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis </p> </p>
+            </div>
+            <div>
+                <h3>noticia 4</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis </p> </p>
+            </div>
+        </div>
+
+    </div> <!-- /Fim container -->
+
+    <footer class="flex" style="margin-left: auto; border: 1px dashed green;"> 
+        <div class="flex" style="margin: 0 auto; border: 2px solid goldenrod;">
+            <h3>Rodapé</h3> 
+        </div>
+    </footer>
+
+</body>
+</html>
